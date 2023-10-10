@@ -1,4 +1,4 @@
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Moliucas/Silentaim2/main/Layer2"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/RFS-cmd/-/main/model"))()
 Aiming.TeamCheck(false)
 
 local Workspace = game:GetService("Workspace")
@@ -8,7 +8,6 @@ local UserInputService = game:GetService("UserInputService")
 
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
-local screenSize = game:GetService("GuiService"):GetScreenSize()
 local CurrentCamera = Workspace.CurrentCamera
 
 local DaHoodSettings = {
