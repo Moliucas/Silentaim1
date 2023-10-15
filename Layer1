@@ -1,4 +1,4 @@
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/RFS-cmd/-/main/model"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/DerpX/main/Games/Da-Hood/Aimbot/Circle-Silent-Aim/Module.lua"))()
 Aiming.TeamCheck(false)
 
 local Workspace = game:GetService("Workspace")
@@ -9,7 +9,6 @@ local UserInputService = game:GetService("UserInputService")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local CurrentCamera = Workspace.CurrentCamera
-local screenSize = game:GetService("GuiService"):GetScreenSize()
 
 local DaHoodSettings = {
     SilentAim = true,
@@ -28,10 +27,7 @@ function Aiming.Check()
     local KOd = Character:WaitForChild("BodyEffects")["K.O"].Value
     local Grabbed = Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
 
-    if (KOd or Grabbed) then
-        return false
-    end
-
+    
     return true
 end
 
