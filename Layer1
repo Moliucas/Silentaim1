@@ -1,4 +1,4 @@
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/DerpX/main/Games/Da-Hood/Aimbot/Circle-Silent-Aim/Module.lua"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Moliucas/Silentaim2/main/Layer2"))()
 Aiming.TeamCheck(false)
 
 local Workspace = game:GetService("Workspace")
