@@ -24,7 +24,7 @@ function Aiming.Check()
     end
 
     local Character = Aiming.Character(Aiming.Selected)
-    local KOd = Character:WaitForChilds("BodyEffects")["K.O"].Value
+    local KOd = Character:WaitForChild("BodyEffects")["K.O"].Value
     local Grabbed = Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
 
     if (KOd or Grabbed) then
